@@ -1,0 +1,19 @@
+.navbar {
+  padding: 10px 50px;
+}
+
+.navbar-brand,
+.nav-link,
+.navbar {
+  color: var(--white);
+}
+
+.nav-link {
+  margin: 0 70px;
+}
+
+.navbar-brand {
+  font-family: "Arimo";
+  font-weight: 700;
+  font-size: 92px;
+}

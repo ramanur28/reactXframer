@@ -1,0 +1,31 @@
+.jumbotron {
+  height: 100vh;
+  padding: 50px;
+  overflow-x: hidden;
+}
+
+.jumbotron .title {
+  color: var(--white);
+  font-family: "Rammetto One";
+  font-size: 92px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.background {
+  background-color: white;
+  position: relative;
+  width: 100px;
+  height: 400px;
+}
+
+.navigate {
+  position: fixed;
+  left: 65vw;
+  top: 0;
+  z-index: 99;
+  width: 35vw;
+  height: 100vh;
+  background-color: white;
+  cursor: pointer;
+}
