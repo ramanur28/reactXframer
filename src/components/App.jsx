@@ -6,6 +6,7 @@ import Cursor from "../cursor";
 // context
 import { useContext } from "react";
 import { mouseContext } from "../mouseContext";
+import TextSlide from "./textSlide";
 
 function App() {
   // getting mouse position and send it to child
@@ -16,6 +17,7 @@ function App() {
       <Cursor mousePos={{ x, y }} />
       <Navbar mousePos={{ x, y }} />
       <Jumbotron />
+      <TextSlide />
     </>
   );
 }

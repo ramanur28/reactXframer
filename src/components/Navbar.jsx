@@ -7,6 +7,7 @@ const Navbar = ({ mousePos }) => {
   // function to set hover state
   const { setHover } = useContext(mouseContext);
   let { x, y } = mousePos;
+  const navAnimation = { x: x / 120, y: y / 120 };
   return (
     // navbar using bootstrap
     // adding utility on mouse enter/hover and parallax effect
@@ -15,7 +16,7 @@ const Navbar = ({ mousePos }) => {
         <motion.a
           className="navbar-brand"
           href="#"
-          animate={{ x: x / 120, y: y / 120 }}
+          animate={navAnimation}
           onMouseEnter={() => {
             setHover(true);
           }}
@@ -37,10 +38,7 @@ const Navbar = ({ mousePos }) => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <motion.ul
-            animate={{ x: x / 100, y: y / 100 }}
-            className="navbar-nav ms-auto"
-          >
+          <motion.ul animate={navAnimation} className="navbar-nav ms-auto">
             <li className="nav-item">
               <motion.a
                 className="nav-link"
